@@ -2,7 +2,7 @@
 
 import MuxPlayer from "@mux/mux-player-react";
 
-const PLAYBACK_ID = process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID ?? "";
+const PLAYBACK_ID = process.env.NEXT_PUBLIC_MUX_PLAYBACK_ID;
 
 export default function Page() {
   if (!PLAYBACK_ID) return <main style={{ padding: 24 }}>Missing NEXT_PUBLIC_MUX_PLAYBACK_ID</main>;
